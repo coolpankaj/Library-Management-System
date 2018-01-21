@@ -1,3 +1,11 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <?php session_start();  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,7 +16,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Plain Page | LMS </title>
+    <title></title>
 
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -20,7 +28,7 @@
 <body class="nav-md">
 <div class="container body">
     <div class="main_container">
-        <div class="col-md-3 left_col">
+        <div class="col-md-3 left_col" style="position: fixed;">
             <div class="left_col scroll-view">
                 <div class="navbar nav_title" style="border: 0;">
                     <a href="#" class="site_title"><i class="fa fa-book"></i> <span>LMS</span></a>
@@ -29,7 +37,7 @@
                 <div class="clearfix"></div>
 
                 <!-- menu profile quick info -->
-                <div class="profile clearfix">
+                <div class="profile clearfix" >
                     <div class="profile_pic">
                         <img src="images/img.jpg" alt="..." class="img-circle profile_img">
                     </div>
@@ -46,16 +54,16 @@
 
                 <!-- sidebar menu -->
                 <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
-                    <div class="menu_section">
+                    <div class="menu_section" >
                         <h3>General</h3>
                         <ul class="nav side-menu">
-                            <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+                            <li><a href="display_student_info.php"><i class="fa fa-home"></i> All Students <span class="fa fa-chevron-down"></span></a>
 
                             </li>
-                            <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
+                            <li><a href="add_books.php"><i class="fa fa-edit"></i>Add Books<span class="fa fa-chevron-down"></span></a>
 
                             </li>
-                            <li><a><i class="fa fa-desktop"></i> UI Elements <span
+                            <li><a href="show_books.php"><i class="fa fa-desktop"></i>Show Books <span
                                     class="fa fa-chevron-down"></span></a>
 
                             </li>
@@ -77,10 +85,10 @@
         </div>
 
         <!-- top navigation -->
-        <div class="top_nav">
-            <div class="nav_menu">
+        <div class="top_nav" >
+            <div class="nav_menu" >
                 <nav>
-                    <div class="nav toggle">
+                    <div class="nav toggle" >
                         <a id="menu_toggle"><i class="fa fa-bars"></i></a>
                     </div>
 

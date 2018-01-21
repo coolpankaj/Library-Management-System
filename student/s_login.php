@@ -3,7 +3,7 @@ if (isset($_POST["submit"])) {
 	$username=$_POST["username"];
 	$password=$_POST["password"];
 	include('connection.php');
-	$q="select * from student_registration where username='$username' and password='$password' && status='yes' ";
+	$q="select * from student_registration where username='$username' and password='$password' && status='active' ";
 	$qry=$con->query($q);
 	if ($qry->num_rows>0) {
 		$_SESSION["slms_ssid"]=$username;
