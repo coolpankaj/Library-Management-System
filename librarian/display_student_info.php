@@ -1,14 +1,9 @@
-<?php
-session_start();
-error_reporting(4);
-if(isset($_SESSION["llms_ssid"]))
-{
-  
-}
-else {
-  echo "<script>alert('You must login first ....');</script>";
-  echo "<script>window.location.href='login.php' </script>";
-} ?><!-- Latest compiled and minified CSS -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>student info |</title>
+  <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <!-- jQuery library -->
@@ -17,6 +12,8 @@ else {
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+</head>
+<body>
 
 <?php include('header.php'); ?>
         <!-- page content area main -->
@@ -94,3 +91,5 @@ else {
         <!-- /page content -->
 
 <?php include ('footer.php'); ?>
+</body>
+</html>

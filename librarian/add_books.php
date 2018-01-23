@@ -1,13 +1,4 @@
-<?php session_start();
-error_reporting(4);
-if(isset($_SESSION["llms_ssid"]))
-{
-  
-}
-else {
-  echo "<script>alert('You must login first ....');</script>";
-  echo "<script>window.location.href='login.php' </script>";
-} ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -97,12 +88,13 @@ else {
                                         </form>
                               </div>   
                             
-                            </div></div>
-                        </div>
-                    </div>
+                            </div>
+                          <!-- </div> -->
+                       <!--  </div> -->
+                <!--     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- /page content -->
 
 <?php include ('footer.php'); ?>
