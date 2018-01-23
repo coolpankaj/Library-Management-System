@@ -42,7 +42,7 @@
                                 <div class="clearfix"></div>
                             </div>
                             <div class="x_content">
-                               <form action="" method="POST">
+                               <form action="" method="POST" style="width: 300px;">
                                  <div class="form-group input-group">                                  
                                    <input type="text" class="form-control" name="book_name" placeholder="Book name"  /> 
                                   <span class="input-group-btn"><button class="btn btn-success" type="submit" name="submit" value="submit"><i class="glyphicon glyphicon-search"></i></button></span>

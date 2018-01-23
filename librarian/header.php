@@ -48,21 +48,19 @@
                     <div class="menu_section" >
                         <h3>General</h3>
                         <ul class="nav side-menu">
-                            <li><a href="display_student_info.php"><i class="fa fa-home"></i> All Students <span class="fa fa-chevron-down"></span></a>
+                            <li><a href="display_student_info.php"><i class="fa fa-home"></i> All Students </a>
 
                             </li>
-                            <li><a href="add_books.php"><i class="fa fa-edit"></i>Add Books<span class="fa fa-chevron-down"></span></a>
+                            <li><a href="add_books.php"><i class="fa fa-edit"></i>Add Books</a>
 
                             </li>
-                            <li><a href="show_books.php"><i class="fa fa-desktop"></i>Show Books <span
-                                    class="fa fa-chevron-down"></span></a>
+                            <li><a href="show_books.php"><i class="fa fa-desktop"></i>Show Books</a>
 
                             </li>
-                            <li><a><i class="fa fa-table"></i> Tables <span class="fa fa-chevron-down"></span></a>
+                            <li><a href="issue_books.php"><i class="fa fa-table"></i>Issue books</a>
 
                             </li>
-                            <li><a><i class="fa fa-bar-chart-o"></i> Data Presentation <span
-                                    class="fa fa-chevron-down"></span></a>
+                            <li><a><i class="fa fa-bar-chart-o"></i> Data Presentation </a>
 
                             </li>
 
