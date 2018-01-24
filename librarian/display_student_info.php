@@ -57,8 +57,8 @@
                                echo "<table class='table table-striped table-bordered table-hover table-condensed'><thead>";
                                echo "<th>S No.</th>
                                     <th>First Name</th>
-                                    <th>Last Name</th>;
-                                    <th>Username</th>;
+                                    <th>Last Name</th>
+                                    <th>Username</th>
                                     <th>Password</th>
                                     <th>Email</th>
                                     <th>Contact</th>

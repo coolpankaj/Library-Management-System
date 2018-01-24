@@ -65,8 +65,8 @@
                                echo "<table class='table table-striped table-hover table-condensed'>";
                                echo "<thead><tr><th>S No.</th>
                                     <th>Book Name</th>
-                                    <th>Book image</th>;
-                                    <th>Book author name</th>;
+                                    <th>Book image</th>
+                                    <th>Book author name</th>
                                     <th>Publication name</th>
                                     <th>Purchase date</th>
                                     <th>Book price</th>
@@ -106,8 +106,8 @@
                                echo "<table class='table table-striped table-hover table-condensed'>";
                                echo "<thead><tr><th>S No.</th>
                                     <th>Book Name</th>
-                                    <th>Book image</th>;
-                                    <th>Book author name</th>;
+                                    <th>Book image</th>
+                                    <th>Book author name</th>
                                     <th>Publication name</th>
                                     <th>Purchase date</th>
                                     <th>Book price</th>

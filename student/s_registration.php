@@ -11,7 +11,7 @@ $sem=$_POST["sem"];
 $enrollmentno=$_POST["enrollmentno"];
 // $con=mysqli_connect("localhost","root","","lms");
 include ('connection.php');
-$q="insert into student_registration values ('','$fname','$lname','$username','$password','$email','$contact','$sem','$enrollmentno','no')";
+$q="insert into student_registration values ('','$fname','$lname','$username','$password','$email','$contact','$sem','$enrollmentno','deactive')";
 $qry=$con->query($q);
 if ($qry == TRUE) {
 	echo "<script>alert('Registration succcessfull.');</script>";
