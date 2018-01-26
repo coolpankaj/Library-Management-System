@@ -57,10 +57,10 @@
                             <li><a href="show_books.php"><i class="fa fa-desktop"></i>Show Books</a>
 
                             </li>
-                            <li><a href="issue_books.php"><i class="fa fa-table"></i>Issue books</a>
+                            <li><a href="issue_books.php"><i class="fa fa-table"></i>Issue new books</a>
 
                             </li>
-                            <li><a href="return_books.php"><i class="fa fa-bar-chart-o"></i> Return books </a>
+                            <li><a href="return_books.php"><i class="fa fa-bar-chart-o"></i>Issued books and Return books </a>
 
                             </li>
 

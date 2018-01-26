@@ -67,23 +67,23 @@
                       include("connection.php");
                       $q1="select * from issue_books where student_enrollment='$enr_op' ";
                       $qry1=$con->query($q1);
+                               echo  "<b>Issued Books</b> ";
                                echo "<div class='table-responsive'> ";
                                echo "<table class='table table-striped table-hover table-condensed table-bordered '>";
-                               echo "<thead><tr><th>S No.</th>
-                                    <th>Enrollment No.</th>
-                                    <th>Name</th>
-                                    <th>Sem.</th>
-                                    <th>Contact</th>
-                                    <th>Email</th>
-                                    <th>Book name</th>
-                                    <th>Book issue date</th>
-                                    <th>Username</th>
-                                    <th>Action</th></tr></thead>";
+                               echo "<thead><tr><th>Enrollment No.</th>
+                                                <th>Name</th>
+                                                <th>Sem.</th>
+                                                <th>Contact</th>
+                                                <th>Email</th>
+                                                <th>Book name</th>
+                                                <th>Book issue date</th>
+                                                <th>Username</th>
+                                                <th>Action</th></tr></thead>";
                                     
                       while($q=$qry1->fetch_array())
                       {
                          
-                          $s_no=$q["id"];
+                          //$s_no=$q["id"];
                           $student_enrollment=$q["student_enrollment"];
                           $student_name=$q["student_name"];
                           $student_sem=$q["student_sem"];
@@ -92,13 +92,13 @@
                           $books_name=$q["books_name"];
                           $books_issue_date=$q["books_issue_date"];
                           $student_username=$q["student_username"];
-                          //$_SESSION["student_enrollment"]=$student_enrollment;
+                          $_SESSION["student_enrollment"]=$student_enrollment;
                           //$_SESSION["student_username"]=$student_username;
                     
-                      ?>
                       
+                      ?>
 
-                                 <tbody><tr><td><?php print $s_no;  ?></td>
+                              <tbody><tr>
                                               <td><?php print $student_enrollment;  ?></td>
                                               <td><?php print $student_name;  ?></td>
                                               <td><?php print $student_sem;  ?></td>
@@ -108,10 +108,10 @@
                                               <td><?php print $books_issue_date;  ?></td>
                                               <td><?php print $student_username;  ?></td>
                                         
-                                              <td><a href='return_books_db.php?uid=<?php print $s_no; ?>' style="color: red;">Return Book</a></td></tr></tbody>
-                                      
-                                </table></div>                              
-                             <?php  }}
+                                              <td><a href='return_books_db.php?uid=<?php print $_SESSION["student_enrollment"]; ?> && b_name=<?php print $books_name; ?>' style='color: red;''>Return Book</a></td></tr></tbody>
+                                   <?php   }  ?>
+                                </table></div>                            
+                              <?php }
                              
                                 ?>
                             </div>

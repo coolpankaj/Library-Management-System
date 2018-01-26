@@ -151,6 +151,22 @@ if (isset($_POST["submit1"]))
     // $student_username=$_POST["student_username"];
 
     include("connection.php");
+    $qty=0;
+    $p="SELECT * FROM add_books WHERE books_name='$books_name';";
+    $pry=$con->query($p);
+    while ($r=$pry->fetch_array()) 
+    {
+      $qty=$r[7];
+      // print($qty);
+    }
+
+    if ($qty==0)
+     {
+      
+      echo "<script>alert('All books are already issued.');</script>";
+      header("location:http://localhost/phplms/librarian/issue_books.php");
+    }
+    else{
     $q="insert into issue_books values ('','$_SESSION[enrollment]','$student_name','$student_sem','$student_contact','$student_email','$books_name','$books_issue_date','','$_SESSION[username]');";
     $qry=$con->query($q);
     if ($qry==TRUE) 
@@ -164,7 +180,7 @@ if (isset($_POST["submit1"]))
       echo "<script>alert('Error..');</script>";
       header("location:http://localhost/phplms/librarian/issue_books.php");
     }
-
+  }
 }
 
 
