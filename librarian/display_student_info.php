@@ -3,16 +3,7 @@
 <html>
 <head>
   <title>student info |</title>
-  <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-</head>
+  </head>
 <body>
 
 <?php include('header.php'); ?>
@@ -24,7 +15,7 @@
                         <h3>Information </h3>
                     </div>
 
-                    <div class="title_right">
+                   <!--  <div class="title_right">
                         <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="Search for...">
@@ -33,7 +24,7 @@
                     </span>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="clearfix"></div>

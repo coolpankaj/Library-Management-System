@@ -17,7 +17,7 @@ if (isset($_POST["submit1"]))
  		while ($r=$pry->fetch_array()) 
  		{
  			$qty=$r[7];
- 			print($qty);
+ 			//print($qty);
  		}
 
  		if ($qty==0)
@@ -29,7 +29,7 @@ if (isset($_POST["submit1"]))
  		else{
 
  			$q="insert into issue_books values ('','$student_enrollment','$student_name','$student_sem','$student_contact','$student_email','$books_name','$books_issue_date','','$student_username');";
- 		//$q .="UPDATE add_books SET books_qty=books_qty-1 WHERE books_name='$books_name';";
+ 		    //$q .="update add_books SET books_qty = books_qty-1 WHERE books_name='$books_name';";
  		//$qry=$con->query($q);
  		$qry=mysqli_multi_query($con,$q);
  		if ($qry==TRUE) 
