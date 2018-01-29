@@ -12,6 +12,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Joti+One" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet">
+
+<script type="text/javascript" src="js/validation.js"></script>
 <style type="text/css">
 h1{
 font-family:'Joti One', cursive;
@@ -25,13 +27,13 @@ legend{font-family: 'Macondo', cursive;text-align: center;word-spacing: 10px;let
 		<div class="col-md-5 col-md-offset-3 col-sm-5 col-sm-offset-3 col-xs-5 col-xs-offset-3">
 			<h1 class="text-muted text-center">Library Management System</h1><br><br>
 			<fieldset><legend>Librarian Login Form</legend></fieldset>
-			<form name="login" action="l_login.php" method="POST">
+			<form name="login" action="l_login.php" method="POST" onsubmit="return validate_login();">
 				<div class="form-group input-group">
-					<input class="form-control" type="name" name="username" placeholder="Username" required="" autocomplete="off" />
+					<input class="form-control" type="name" name="username" placeholder="Username"/>
 					<div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
 				</div>
 				<div class="form-group input-group">
-					<input type="password" class="form-control" name="password" placeholder="Password" required="" />
+					<input type="password" class="form-control" name="password" placeholder="Password"  />
 					<div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
 				</div>
 				<div class="form-group">
